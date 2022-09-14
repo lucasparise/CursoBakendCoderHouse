@@ -1,0 +1,20 @@
+[
+  {
+    "title": "Last of Us",
+    "price": 60,
+    "img": "https://images5.alphacoders.com/394/394511.jpg",
+    "id": 1
+  },
+  {
+    "title": "Mass Effect",
+    "price": 30,
+    "img": "https://images6.alphacoders.com/309/309815.jpg",
+    "id": 2
+  },
+  {
+    "title": "Dead Space",
+    "price": 25,
+    "img": "https://images.alphacoders.com/250/250383.jpg",
+    "id": 3
+  }
+]
