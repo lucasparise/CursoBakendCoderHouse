@@ -57,11 +57,12 @@ class Contenedor {
             let productosGuardados = await this.getAll();
             let datosProductos = Array.from(productosGuardados);
 
-            let index = datosProductos.findIndex(i => i.id === id);
+            let index = datosProductos.findIndex(i => i.id ===  parseInt(id));
 
             if (index != -1){
-                datosProductos[index] = {productoAActualizar, id}
+                datosProductos[index] = {...productoAActualizar, id};
                 await fs.promises.writeFile(this.nombreArchivo, JSON.stringify(datosProductos,null,2));
+                return {...productoAActualizar, id}
             }else{
                 console.log('no se encontro ID');
                 return null
@@ -77,7 +78,7 @@ class Contenedor {
         try{
             let productosGuardados = await this.getAll();
             let datosProductos = Array.from(productosGuardados);
-            datosProductos = [...datosProductos.filter(i => i.id !== id)];
+            datosProductos = [...datosProductos.filter(i => i.id !== parseInt(id))];
             await fs.promises.writeFile(this.nombreArchivo, JSON.stringify(datosProductos,null,2)) ;
             return id;
         }

@@ -1,9 +1,9 @@
 [
   {
-    "title": "Last of Us",
-    "price": 60,
-    "img": "https://images5.alphacoders.com/394/394511.jpg",
-    "id": 1
+    "title": "fifa 23",
+    "price": "100",
+    "img": "google.com",
+    "id": "1"
   },
   {
     "title": "Mass Effect",

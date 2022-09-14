@@ -4,14 +4,14 @@ const {Contenedor} = require("./container");
 
 const contenedor = new Contenedor("productos.txt")
 
-/* ver todos los productos */
+/* ver todos los productos */   
 routerProducto.get("/", async(req, res) => {
     const listaProductos = await contenedor.getAll();
     res.json(listaProductos);
 })
 
 
-/* ver producto por ID */
+/* ver producto por ID */  
 routerProducto.get("/:id", async(req, res) => {
     const productobuscado = await contenedor.getByID(req.params.id);
     res.json(productobuscado ?? {error: "producto no encontrado"});
@@ -19,7 +19,6 @@ routerProducto.get("/:id", async(req, res) => {
 
 
 /* agregar producto */
-                                                /* a revisar */
 routerProducto.post("/", async (req, res) => {
     let datos = req.body;
     const producto = await contenedor.save(datos);
@@ -29,6 +28,7 @@ routerProducto.post("/", async (req, res) => {
 
 /* actualizar producto */
 routerProducto.put("/:id", async(req, res) => {
+    console.log(req.body.title)
     let datos = req.body
     const producto = await contenedor.updateByID(datos, req.params.id);
     res.json(producto);
