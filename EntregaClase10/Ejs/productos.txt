@@ -1,0 +1,26 @@
+[
+  {
+    "title": "fifa 23",
+    "price": "100",
+    "img": "google.com",
+    "id": 1
+  },
+  {
+    "title": "Mass Effect",
+    "price": 30,
+    "img": "https://images6.alphacoders.com/309/309815.jpg",
+    "id": 2
+  },
+  {
+    "title": "Dead Space",
+    "price": 25,
+    "img": "https://images.alphacoders.com/250/250383.jpg",
+    "id": 3
+  },
+  {
+    "title": "sonic",
+    "price": "123",
+    "img": "https://static.wikia.nocookie.net/sonic/images/2/2d/TSR_Sonic.png",
+    "id": 4
+  }
+]

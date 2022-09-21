@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <title>Formulario de Ingreso</title>
+  </head>
+  
+  <nav class="navbar navbar-expand-lg bg-light">
+    <div class="container-fluid">
+  
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-link" href="/public/">Formulario Carga</a>
+          <a class="nav-link" href="/api/productos">Lista productos</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <body>
+
+    <h2 class="m-5">Ingrese Producto</h2>
+
+    <form class="row col-8 g-3 m-5" action="/api/productos" method="post">
+
+      <div class="col-md-6">
+        <label for="inputEmail4" class="form-label">Titulo</label>
+        <input type="text" class="form-control" name="title">
+      </div>
+      <div class="col-md-6">
+        <label for="inputPassword4" class="form-label">Precio</label>
+        <input type="number" class="form-control" name="price">
+      </div>
+      <div class="col-12">
+        <label for="inputAddress" class="form-label">URL img</label>
+        <input type="text" class="form-control" name="img" >
+      <div class="col-12">
+        <button type="submit" class="btn btn-primary my-5">Cargar producto</button>
+      </div>
+    </form>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+  </body>
+</html>
