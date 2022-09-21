@@ -62,7 +62,8 @@ class Contenedor {
             if (index != -1){
                 datosProductos[index] = {...productoAActualizar, id};
                 await fs.promises.writeFile(this.nombreArchivo, JSON.stringify(datosProductos,null,2));
-                return {...productoAActualizar, id}
+                let intID = parseInt(id)
+                return {...productoAActualizar, intID}
             }else{
                 console.log('no se encontro ID');
                 return null
